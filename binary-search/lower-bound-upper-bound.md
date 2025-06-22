@@ -4,4 +4,4 @@ Now you are given a target
 
 ## Lower bound  
 
-**Definition:** 
+**Definition:** The first (smallest) index $i$ where the value $A[i]$ is greater than or equal to `target` i.e. $A[i] \ge \text{target}$ 
