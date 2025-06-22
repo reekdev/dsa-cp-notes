@@ -33,3 +33,15 @@ var mid = left + ((right - left) >> 1);
 
 You could also write the algorithm using `for loop` instead of `while loop`
 
+```java
+public int binarySearch(int[] nums, int target) {  
+    for (int left = 0, right = nums.length - 1; left <= right;) {  
+        int mid = left + ((right - left) >> 1);  
+        if (target == nums[mid]) return mid;  
+        else if (target < nums[mid]) right = mid - 1;  
+        else left = mid + 1;  
+    }  
+    return -1;  
+}
+```
+
