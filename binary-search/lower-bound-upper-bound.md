@@ -9,7 +9,8 @@ The first (smallest) index $i$ where the value $A[i]$ is ***greater than or equa
 
 ## Examples
 
-Example 1
+**Example 1**  
+
 ```
 arr = [2, 5, 6, 6, 7, 7, 7, 8, 9, 10, 11, 11]
 target = 7
@@ -20,6 +21,17 @@ target = 7
 | **element** |  2  |  5  |  6  |  6  |  7  |  7  |  7  |  8  |  9  | 10  | 11  | 11  |
 
 In this case, the smallest index where $A[i] \ge \text{target}$ is $4$.
+
+**Example 2**  
+
+```
+arr = [4 6 10 12 16 20 28]
+target = 18
+```
+
+|  **index**  | 0 | 1 |  2 |  3 |  4 |  5 |  6 |
+|:-----------:|:-:|:-:|:--:|:--:|:--:|:--:|:--:|
+| **element** | 4 | 6 | 10 | 12 | 16 | 20 | 28 |
 
 ---
 
