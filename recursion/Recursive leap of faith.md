@@ -2,4 +2,5 @@ The **Recursive Leap of Faith** is a problem solving framework where you *assume
 
 This assumption allows you to focus on two critical components:  
 1. **Base case:** the *simplest* scenario where the solution is so trivial that we can directly get the answer without any computation.
-2. **Recursive case:** 
+2. **Recursive case:** how to break down the current problem using our "already working" function.
+
