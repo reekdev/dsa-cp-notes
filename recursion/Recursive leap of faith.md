@@ -72,5 +72,30 @@ public class Main {
 }
 ```
 
-This approach is okay, but creating a string on every call stack is expensive. So one pattern is that we create a *helper* utility function and some mutable data structure (list, set, string builder etc.). The helper takes the data structure, and performs some operation on it.
+This approach is okay, but creating a string on every call stack is expensive. Each string concatenation (+) operation creates many intermediate strings.  So one pattern is that we create a *helper* utility function and some mutable data structure (list, set, string builder etc.). The helper takes the data structure, and performs some operation on it.
 
+```java
+public class Main {  
+    public static void main(String[] args) {  
+        var ans = print(5);  
+        System.out.println(ans);  
+    }  
+  
+    public static String print(int n) {  
+        StringBuilder sb = new StringBuilder();  
+        helper(n, sb);  
+        return sb.toString();  
+    }  
+  
+    private static void helper(int n, StringBuilder sb) {  
+        if (n == 1) {  
+            sb.append("1");  
+            return;  
+        }  
+        helper(n-1, sb);  
+  
+        // at this point, sb already contains the previous (n-1) numbers in it.  
+        sb.append(" ").append(n);  
+    }
+}
+```
