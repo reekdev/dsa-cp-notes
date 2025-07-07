@@ -5,3 +5,11 @@ This assumption allows you to focus on two critical components:
 2. **Recursive case:** how to break down the current problem using our "already working" function.
 
 ## The core methodology:  
+
+
+## Problems:  
+---
+**Print 1 to N**
+
+Given a N, print from 1 to N
+
