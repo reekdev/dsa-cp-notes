@@ -99,3 +99,36 @@ public class Main {
     }
 }
 ```
+
+following up on this idea, there is variation of this called **tail-recursive** (or, **accumulator-style**) version of this function.
+
+This involves:
+1. carrying along an accumulator. 
+2. using tail recursion style i.e. the recursive call is the last action of the function.
+
+Why is it (arguably) better?  
+it builds output **as it recurses**, rather than during the unwinding phase. the work happens during the recursion itself. It can be easily transformed into a loop. 
+
+```java
+public class Main {  
+    public static void main(String[] args) {  
+        var ans = print(5);  
+        System.out.println(ans);  
+    }  
+  
+    public static String print(int n) {  
+        StringBuilder sb = new StringBuilder();  
+        return build(1, n, sb).toString();  
+    }  
+  
+    private static StringBuilder build(int current, int end, StringBuilder acc) {  
+        if (current > end) return acc;  
+  
+        if (current > 1) acc.append(" ");  
+        acc.append(current);  
+  
+        return build(current + 1, end, acc);  
+    }
+}
+```
+
