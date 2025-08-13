@@ -5,6 +5,12 @@ char upper = 'T';
 char lower = (char)(upper + ('a' - 'A')); // contains 't'
 ```
 
+**Explanation**
+
+`upper` holds the 
+
+---
+
 ## Lowercase to Uppercase
 
 ```java
