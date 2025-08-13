@@ -7,7 +7,8 @@ char lower = (char)(upper + ('a' - 'A')); // contains 't'
 
 **Explanation**
 
-`upper` holds the 
+`upper` holds the value `T` which is of type `char`
+
 
 ---
 
