@@ -27,4 +27,4 @@ Since, this difference does not change you can just use this offset to convert c
 So,  
 when you need to convert a character to **lowercase from uppercase** you can **add** this offset.  
 
-when you need to convert a character to **uppercase from lowercase** you can **subtract** this offset.  **
+when you need to convert a character to **uppercase from lowercase** you can **subtract** this offset.
