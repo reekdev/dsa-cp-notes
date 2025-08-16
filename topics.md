@@ -5,5 +5,7 @@ GCD, LCM, Euclidean algorithm
 calculating square root  
 find all factors of a number  
 calculate nCr  
+euler's totient function  
+
 
 
